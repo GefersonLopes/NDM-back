@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  pgsql:
+    image: postgres:alpine
+    ports:
+      - '5431:5431'
+    container_name: 'pgsql2'
+    restart: always
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: geferson
+      POSTGRES_PASSWORD: gel881206
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8081
+
+volumes:
+  pg-data:
