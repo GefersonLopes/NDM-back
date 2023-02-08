@@ -12,7 +12,7 @@ Este é o link direto para a aplicação [https://ndm.vercel.app/]
 Gravei um vídeo explicativo da minha aplicação como está funcionando porque sei que poucará um pouco do seu tempo,
 mas tá bem bacana, dá pra entender um pouco do projeto realizado.
 
-Link do vídeo: [https://youtu.be/luffsWBQ1vo]
+Link do vídeo: [https://youtu.be/M-oqvvNtKl4]
 
 # COMO RODAR A APLICAÇÃO FRONT END? 
 
