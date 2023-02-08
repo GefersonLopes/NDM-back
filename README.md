@@ -5,7 +5,7 @@ LINKEDIN -> [https://www.linkedin.com/in/algeferson/]
 
 # QUAL É O LINK DO DEPLOY?
 
-Este é o link direto para a aplicação [https://guia-moteis-front-end.vercel.app/dashboard]
+Este é o link direto para a aplicação [https://ndm.vercel.app/]
 
 # QUAL O LINK DA APRESENTAÇÃO DO VÍDEO DO YOUTUBE?
 
