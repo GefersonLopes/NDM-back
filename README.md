@@ -14,7 +14,7 @@ mas tá bem bacana, dá pra entender um pouco do projeto realizado.
 
 Link do vídeo: [https://youtu.be/M-oqvvNtKl4]
 
-# COMO RODAR A APLICAÇÃO FRONT END? 
+# COMO RODAR A APLICAÇÃO BACK END? 
 
 Para rodar o projeto e verificar como cada coisa se comporta é só executar o comando `yarn start ou npm start` que logo em seguida será aberta uma página no localhost de sua máquina ;)
 
