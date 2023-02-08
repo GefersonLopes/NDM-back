@@ -31,7 +31,10 @@ __decorate([
     __metadata("design:type", Number)
 ], Player.prototype, "number", void 0);
 __decorate([
-    (0, typeorm_1.ManyToOne)(() => team_entity_1.Team, (team) => team.players, { nullable: false }),
+    (0, typeorm_1.ManyToOne)(() => team_entity_1.Team, (team) => team.players, {
+        nullable: false,
+        onDelete: 'CASCADE',
+    }),
     (0, typeorm_1.JoinColumn)(),
     __metadata("design:type", team_entity_1.Team)
 ], Player.prototype, "team", void 0);
