@@ -3,11 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@nestjs/core");
 const swagger_1 = require("@nestjs/swagger");
 const app_module_1 = require("./app.module");
-const cors_1 = require("cors");
 async function bootstrap() {
-    const app = await core_1.NestFactory.create(app_module_1.AppModule);
-    app.use((0, cors_1.default)({
-        origin: ['*', 'http://localhost:3000', 'http://localhost:3001'],
+    const app = await core_1.NestFactory.create(app_module_1.AppModule, { cors: true });
+    app.enableCors({
+        origin: '*',
         methods: ['POST', 'PUT', 'DELETE', 'GET', 'PATCH'],
         allowedHeaders: [
             'Accept',
@@ -17,20 +16,10 @@ async function bootstrap() {
             'Origin',
             'X-Requested-With',
             'Authorization',
-            'Access-Control-Allow-Headers',
-            'Origin,Accept',
-            'X-Requested-With',
-            'Content-Type',
-            'Access-Control-Request-Method',
-            'Access-Control-Request-Headers',
-            'Access-Control-Allow-Origin',
-            'Access-Control-Allow-Credentials',
-            'Access-Control-Expose-Headers',
-            'Access-Control-Allow-Methods',
         ],
         credentials: true,
         exposedHeaders: ['API-Token-Expiry'],
-    }));
+    });
     const config = new swagger_1.DocumentBuilder()
         .setTitle('API NDM')
         .setDescription('Technical test')
