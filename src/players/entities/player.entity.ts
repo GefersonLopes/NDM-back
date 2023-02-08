@@ -21,7 +21,10 @@ export class Player {
     @Column()
     number: number;
 
-    @ManyToOne(() => Team, (team) => team.players, { nullable: false })
+    @ManyToOne(() => Team, (team) => team.players, {
+        nullable: false,
+        onDelete: 'CASCADE',
+    })
     @JoinColumn()
     team: Team;
 }

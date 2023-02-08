@@ -6,7 +6,7 @@ const app_module_1 = require("./app.module");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule, { cors: true });
     app.enableCors({
-        origin: ['*'],
+        origin: ['*', 'http://localhost:3000', 'http://localhost:3001'],
         methods: ['POST', 'PUT', 'DELETE', 'GET', 'PATCH'],
         allowedHeaders: [
             'Accept',
@@ -29,6 +29,12 @@ async function bootstrap() {
         ],
         credentials: true,
         exposedHeaders: ['API-Token-Expiry'],
+    });
+    app.use((req, res, next) => {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH');
+        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+        next();
     });
     const config = new swagger_1.DocumentBuilder()
         .setTitle('API NDM')
