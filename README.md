@@ -1,38 +1,25 @@
-<fieldset>
-  <div >
-    <h1>Olá, Me Chamo Geferson Almeida Lopes, seja bem vindo ao meu readme!</h1>
-    <p>Aqui você verá algumas sitações do código e um pouco sobre mim.</p>
-  <div>
-</fieldset>
-</br>
-<div>
-  <em>
-    <h3> AVISO: Caso queira ver a documentação Swagger o diretório é: 
-    </h3>
-  </em>
-<a href="http://localhost:3000/swagger">Link para acessar a documentação</a>
+# Olá, seja bem Vindo ao README Principal do projeto!!!
+GEFERSON ALMEIDA LOPES
+GMAIL -> gefersonjefreey@gmail.com
+LINKEDIN -> [https://www.linkedin.com/in/algeferson/]
 
-</br>
-  <p>Link para meu perfil Linkedin : <a href="https://www.linkedin.com/in/algeferson/swagger">Linkedin</a></p>  
-  
-</div>
+# QUAL É O LINK DO DEPLOY?
 
-</br>
-<h2>Sobre minha experiências:</h2>
-<div>
+Este é o link direto para a aplicação [https://guia-moteis-front-end.vercel.app/dashboard]
 
-  KENZIE ACADEMY BRASIL (Curitiba/PR) desde 07/2021
-(Instituição de ensino de desenvolvimento web) 
-MONITORIA
-Responsável por prestar assistência aos alunos dos módulos anteriores 
-Principais funções:
-- Contato ativo com alunos
-- Correção das atividades em React, JavaScript, CSS, ES6, TypeScript, HTML, Node.js, Express, Python, Django
-- Assistência no canal de dúvidas
-- Relatórios sobre alunos- Aplicação de testes
+# QUAL O LINK DA APRESENTAÇÃO DO VÍDEO DO YOUTUBE?
 
+Gravei um vídeo explicativo da minha aplicação como está funcionando porque sei que poucará um pouco do seu tempo,
+mas tá bem bacana, dá pra entender um pouco do projeto realizado.
 
-OBS: Pra ser verdadeiro, o framework NestJs e o Redis não era algo que eu tinha domínio, mas foi uma tech que amei aprender, muito mais poderosa e sólida do que simplesmente o NodeJs puro com o Express
+Link do vídeo: [https://youtu.be/luffsWBQ1vo]
 
-Mas em geral, tenho domínio nas demais libs e bibliotecas utilizadas de forma bem sólida.
-</div>
+# COMO RODAR A APLICAÇÃO FRONT END? 
+
+Para rodar o projeto e verificar como cada coisa se comporta é só executar o comando `yarn start ou npm start` que logo em seguida será aberta uma página no localhost de sua máquina ;)
+
+LEMBRANDO QUE ANTES DESSE PROCESSO DEVE SER INSTALADA AS DEPENDÊNCIAS 
+COM O COMANDO `yarn ou npm intall`
+
+Bom, acho que é só isso ;)
+Precisando de algo mais, só entrar em contato comigo pelo linkedin ou email, mas se preferirem... whatsapp => `(71) 9 96063783`
