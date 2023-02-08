@@ -1,28 +1,25 @@
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-import cors from 'cors';
 
 async function bootstrap() {
-    const app = await NestFactory.create(AppModule);
+    const app = await NestFactory.create(AppModule, { cors: true });
 
-    app.use(
-        cors({
-            origin: '*',
-            methods: ['POST', 'PUT', 'DELETE', 'GET', 'PATCH'],
-            allowedHeaders: [
-                'Accept',
-                'Accept-Version',
-                'Content-Type',
-                'Api-Version',
-                'Origin',
-                'X-Requested-With',
-                'Authorization',
-            ],
-            credentials: true,
-            exposedHeaders: ['API-Token-Expiry'],
-        })
-    );
+    app.enableCors({
+        origin: ['*', 'http://localhost:3000', 'http://localhost:3001'],
+        methods: ['POST', 'PUT', 'DELETE', 'GET', 'PATCH'],
+        allowedHeaders: [
+            'Accept',
+            'Accept-Version',
+            'Content-Type',
+            'Api-Version',
+            'Origin',
+            'X-Requested-With',
+            'Authorization',
+        ],
+        credentials: true,
+        exposedHeaders: ['API-Token-Expiry'],
+    });
 
     const config = new DocumentBuilder()
         .setTitle('API NDM')
